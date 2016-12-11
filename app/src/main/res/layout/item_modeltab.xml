@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/modelItem"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="224dp"
+    android:layout_margin="8dp"
+    android:background="@color/colorIconYellow">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/modelItem_title_1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="#ffffff"
+                android:textSize="56sp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="灰"/>
+            <TextView
+                android:id="@+id/modelItem_title_2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="#ffffff"
+                android:textSize="56sp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="常"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/modelItem_title_3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="#ffffff"
+                android:textSize="56sp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="开"/>
+            <TextView
+                android:id="@+id/modelItem_title_4"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="#ffffff"
+                android:textSize="56sp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="熏"/>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/modelItem_time"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:background="#44ffffff"
+        android:textColor="#ffffff"
+        android:text="2016-12-21"/>
+
+</LinearLayout>
