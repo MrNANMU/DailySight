@@ -59,6 +59,12 @@ public class MainActivity extends AppCompatActivity {
         this.initEvent() ;
     }
 
+    @Override
+    protected void onRestart() {
+        super.onRestart();
+        this.daily.updateList();
+    }
+
     private void initView(){
         this.initBar() ;
         this.initTab();

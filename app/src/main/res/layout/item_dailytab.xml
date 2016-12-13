@@ -1,16 +1,94 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="72dp"
-    android:background="#44000000"
+    android:layout_height="112dp"
+    android:background="#ffffff"
     android:layout_margin="8dp">
+    <LinearLayout
+        android:id="@+id/dailyItem_hasTitle"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2">
+            <TextView
+                android:id="@+id/dailyItem_words"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="无言独上西楼"
+                android:textSize="14sp"
+                android:textColor="#44000000"
+                android:layout_marginTop="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"/>
+        </LinearLayout>
 
-    <TextView
-        android:id="@+id/dailyItem_tv"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="A"
-        android:textColor="#ffffff"/>
+        <LinearLayout
+            android:id="@+id/dailyItem_cover"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:background="@color/colorIconPurple"
+            android:gravity="center">
+            <TextView
+                android:id="@+id/dailyItem_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="2016-12-21"
+                android:textSize="14sp"
+                android:textColor="#eeffffff"
+                android:layout_marginRight="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginBottom="8dp"
+                android:gravity="center"/>
 
-</LinearLayout>
+            <TextView
+                android:id="@+id/dailyItem_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="如梦令"
+                android:singleLine="false"
+                android:textSize="20sp"
+                android:textColor="#eeffffff"
+                android:layout_marginRight="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="8dp"
+                android:gravity="center"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/dailyItem_noTitle"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/dailyItem_time_sim"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="2016-12-21"
+            android:textColor="#eeffffff"
+            android:background="@color/colorIconPurple"
+            android:paddingTop="16dp"
+            android:paddingBottom="8dp"
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/dailyItem_words_sim"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="故国不堪回首月明中"
+            android:textColor="#44000000"
+            android:textSize="14sp"
+            android:paddingTop="8dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:paddingBottom="16dp"/>
+    </LinearLayout>
+
+
+
+</FrameLayout>

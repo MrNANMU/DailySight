@@ -1,9 +1,12 @@
 package com.dasong.daily.listener;
 
 import android.content.Context;
+import android.content.Intent;
 import android.support.design.widget.Snackbar;
 import android.util.Log;
 import android.view.View;
+
+import com.dasong.daily.activitys.NewDailyActivity;
 
 import java.util.List;
 
@@ -32,7 +35,8 @@ public class ButtonClickedListener implements View.OnClickListener {
                 Log.v("ZHENG:",this.position+"") ;
                 break;
             case DAILY_TAB :
-                Snackbar.make(this.view,"新建日记",Snackbar.LENGTH_SHORT).show();
+                Intent intent = new Intent(view.getContext(), NewDailyActivity.class) ;
+                view.getContext().startActivity(intent);
                 Log.v("ZHENG:",this.position+"") ;
                 break;
             case PREDICTION_TAB :

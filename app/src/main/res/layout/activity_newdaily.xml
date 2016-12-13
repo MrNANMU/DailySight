@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f0f0f0">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/newDaily_appBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/newDaily_ToolBar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            android:focusable="true"
+            android:focusableInTouchMode="true"/>
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/newDaily_editWapper"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/newDaily_appBarLayout"
+        android:layout_marginTop="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginBottom="8dp">
+
+        <EditText
+            android:id="@+id/newDaily_titleEdit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#ee000000"
+            android:backgroundTint="@color/colorPrimary"
+            android:textColorHint="@color/colorPrimary"
+            android:maxLength="6"/>
+
+    </android.support.design.widget.TextInputLayout>
+
+    <EditText
+        android:id="@+id/newDaily_words"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@null"
+        android:layout_below="@id/newDaily_editWapper"
+        android:textColor="#ee000000"
+        android:gravity="start"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"/>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/newDaily_addDaily"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:src="@drawable/icon_save"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:layout_margin="16dp"
+        app:backgroundTint="@color/colorPrimary"/>
+
+    <TextView
+        android:id="@+id/newDaily_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2016-12-21"
+        android:textColor="@color/colorPrimary"
+        android:layout_below="@+id/newDaily_appBarLayout"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="16dp"
+        android:layout_marginRight="16dp"/>
+
+
+</RelativeLayout>

@@ -37,7 +37,6 @@ public class ModelFragment extends Fragment {
     }
 
     private void initView(){
-        Log.e("ZHENG:","res -> " + R.id.modelRecView) ;
         this.modelRecView = (RecyclerView)view.findViewById(R.id.modelRecView) ;
         this.mdatas = new ArrayList<String>() ;
         this.mdatas.add("累觉不爱") ;
